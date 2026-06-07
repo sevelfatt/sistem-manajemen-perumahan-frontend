@@ -3,10 +3,10 @@ import { Toaster } from 'react-hot-toast';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import Residents from './pages/Residents';
-// import Houses from './pages/Houses';
-// import Payments from './pages/Payments';
-// import Expenses from './pages/Expenses';
-// import Reports from './pages/Reports';
+import Houses from './pages/Houses';
+import Payments from './pages/Payments';
+import Expenses from './pages/Expenses';
+import Reports from './pages/Reports';
 
 export default function App() {
   return (
@@ -30,10 +30,10 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="residents" element={<Residents />} />
-          {/* <Route path="houses" element={<Houses />} />
+          <Route path="houses" element={<Houses />} />
           <Route path="payments" element={<Payments />} />
           <Route path="expenses" element={<Expenses />} />
-          <Route path="reports" element={<Reports />} /> */}
+          <Route path="reports" element={<Reports />} />
         </Route>
       </Routes>
     </BrowserRouter>

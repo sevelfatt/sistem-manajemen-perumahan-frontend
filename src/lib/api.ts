@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: 'http://sistem-manajemen-perumahan-backend.test/api',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
